@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Образовательная Платформа</title>
+    <!-- Подключение Bootstrap для базового стайлинга -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Дополнительные стили -->
+    <style>
+        body {
+            padding-top: 56px; /* Отступ для фиксированной навигационной панели */
+        }
+        .hero-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .streams-section {
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Образовательная Платформа</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Вход</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Добро пожаловать на нашу образовательную платформу!</h1>
+            <p class="lead">Участвуйте в прямых трансляциях, общайтесь с преподавателями и развивайтесь вместе с нами.</p>
+            <a href="/login" class="btn btn-primary btn-lg">Начать</a>
+        </div>
+    </section>
+
+    <!-- Секция с трансляциями (опционально) -->
+    <section class="streams-section">
+        <div class="container">
+            <h2 class="mb-4">Доступные Трансляции</h2>
+            <div class="row">
+                <!-- Пример карточки трансляции -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Трансляция 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Тема Трансляции 1</h5>
+                            <p class="card-text">Краткое описание темы трансляции.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="/stream/1" class="btn btn-sm btn-outline-secondary">Посмотреть</a>
+                                </div>
+                                <small class="text-muted">Сегодня в 18:00</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Добавьте дополнительные карточки трансляций по мере необходимости -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Подключение Bootstrap JS и зависимостей -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Дополнительные скрипты -->
+</body>
+</html>

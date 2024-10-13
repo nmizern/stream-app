@@ -1,0 +1,23 @@
+server:
+  address: ":8080"
+  read_timeout: 15
+  write_timeout: 15
+
+database:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "qwerty123"
+  name: "postgres"
+
+redis:
+  address: "localhost:6379"
+  password: ""
+  db: 0
+
+jwt:
+  secret_key: "your_secret_key"
+  token_lifetime: 72h
+
+log:
+  level: "info"  # Возможные значения: debug, info, warn, error, dpanic, panic, fatal
